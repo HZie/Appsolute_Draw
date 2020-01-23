@@ -690,7 +690,6 @@ id add
 id alertTitle
 id all
 id always
-id appwidget_text
 id async
 id barrier
 id beginning
@@ -736,9 +735,12 @@ id ifRoom
 id image
 id imageButton10
 id imageButton11
-id imageButton2
 id imageButton3
 id imageButton4
+id imgBtn_tag01
+id imgBtn_tag02
+id imgBtn_tag03
+id imgBtn_tag04
 id info
 id invisible
 id italic
@@ -763,7 +765,6 @@ id percent
 id progress_circular
 id progress_horizontal
 id radio
-id refreshBtn
 id right
 id right_icon
 id right_side

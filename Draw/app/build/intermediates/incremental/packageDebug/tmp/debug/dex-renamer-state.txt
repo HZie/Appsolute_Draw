@@ -1,4 +1,4 @@
-#Wed Jan 22 22:13:57 KST 2020
-base.0=D\:\\ETC\\Creating\\workspace\\android studio\\Draw\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+#Thu Jan 23 20:10:32 KST 2020
+base.0=D\:\\ETC\\Creating\\workspace\\git\\Appsolute_Draw\\Draw\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

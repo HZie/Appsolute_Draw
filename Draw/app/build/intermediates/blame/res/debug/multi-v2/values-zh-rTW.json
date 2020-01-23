@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\ETC\\Creating\\workspace\\android studio\\Draw\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rTW\\values-zh-rTW.xml",
+            "outputFile": "D:\\ETC\\Creating\\workspace\\git\\Appsolute_Draw\\Draw\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-zh-rTW\\values-zh-rTW.xml",
             "map": [
                 {
                     "source": "C:\\Users\\JH\\.gradle\\caches\\transforms-2\\files-2.1\\72b2b92ec4ab73ff21fb9bc348de3b22\\core-1.0.1\\res\\values-zh-rTW\\values-zh-rTW.xml",
