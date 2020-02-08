@@ -25,3 +25,10 @@ allprojects {
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
+//
+//dependencies {
+//
+//    //엑셀파일 읽기 쓰기
+//    implementation 'org.apache.poi:poi:3.9'
+//
+//}
