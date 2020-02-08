@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+<<<<<<< HEAD
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
@@ -21,17 +21,22 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+=======
+>>>>>>> 5002b97ff04f5c827f615dd62f61b598e7c3ff29
 public class screen2 extends AppCompatActivity {
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen2);
 
+        //Intent intent = getIntent();
+        //String str = intent.getStringExtra("입력한 문구");
+        //TextView statement = (TextView)findViewById(R.id.textView2);
+        //intent로 가져온 텍스트로 설정
+        //statement.setText(str);
 
+<<<<<<< HEAD
     }
 
 
@@ -128,4 +133,9 @@ public class screen2 extends AppCompatActivity {
 
 
 
+=======
+
+
+    }
+>>>>>>> 5002b97ff04f5c827f615dd62f61b598e7c3ff29
 }

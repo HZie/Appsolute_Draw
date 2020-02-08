@@ -10,62 +10,42 @@
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
         android:layout_marginBottom="0dp"
-        android:layout_weight="4"
-        android:baselineAligned="false"
+        android:baselineAligned="true"
         android:gravity="center"
         android:orientation="horizontal">
 
-        <ImageButton
+
+        <Button
             android:id="@+id/imgBtn_tag01"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
+            android:layout_margin="5dp"
             android:layout_weight="1"
-            android:background="#00FFFFFF"
-            android:maxWidth="50dp"
-            android:maxHeight="50dp"
-            android:scaleType="centerInside"
-            app:srcCompat="@drawable/icon1" />
+            android:background="@drawable/icon1" />
 
-        <ImageButton
-            android:id="@+id/imgBtn_tag02"
+        <Button
+            android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
+            android:layout_margin="5dp"
             android:layout_weight="1"
-            android:background="#00FFFFFF"
-            android:maxWidth="50dp"
-            android:maxHeight="50dp"
-            android:scaleType="centerInside"
-            app:srcCompat="@drawable/icon2" />
+            android:background="@drawable/icon2" />
 
-        <ImageButton
-            android:id="@+id/imgBtn_tag03"
+        <Button
+            android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
+            android:layout_margin="5dp"
             android:layout_weight="1"
-            android:background="#00FFFFFF"
-            android:maxWidth="50dp"
-            android:maxHeight="50dp"
-            android:scaleType="centerInside"
-            app:srcCompat="@drawable/icon3" />
+            android:background="@drawable/icon3" />
 
-        <ImageButton
-            android:id="@+id/imgBtn_tag04"
+        <Button
+            android:id="@+id/button5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
+            android:layout_margin="5dp"
             android:layout_weight="1"
-            android:background="#00FFFFFF"
-            android:maxWidth="50dp"
-            android:maxHeight="50dp"
-            android:scaleType="centerInside"
-            app:srcCompat="@drawable/icon4" />
+            android:background="@drawable/icon4" />
 
 
     </LinearLayout>

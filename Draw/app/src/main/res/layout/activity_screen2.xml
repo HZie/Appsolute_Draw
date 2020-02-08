@@ -41,8 +41,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/icon4"
-                android:background="@color/ewhaBeige"
-                android:onClick="bt1"/>
+                android:background="@color/ewhaBeige"/>
 
             <ImageButton
                 android:id="@+id/imageButton4"
@@ -51,15 +50,13 @@
                 android:layout_weight="1"
                 app:srcCompat="@drawable/icon1"
                 android:background="@color/ewhaBeige"
-                android:onClick="bt2"
                 />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="100dp"
-            android:orientation="vertical"
-            ></LinearLayout>
+            android:orientation="vertical"></LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -72,9 +69,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/icon2"
-                android:background="@color/ewhaBeige"
-                android:onClick="bt3"
-                />
+                android:background="@color/ewhaBeige"/>
 
             <ImageButton
                 android:id="@+id/imageButton11"
@@ -82,8 +77,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/icon3"
-                android:background="@color/ewhaBeige"
-                android:onClick="bt4"/>
+                android:background="@color/ewhaBeige"/>
         </LinearLayout>
 
     </LinearLayout>
