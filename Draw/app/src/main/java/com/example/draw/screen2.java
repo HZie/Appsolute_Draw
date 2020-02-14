@@ -1,13 +1,10 @@
 package com.example.draw;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
@@ -19,7 +16,6 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
 
 public class screen2 extends AppCompatActivity {
 
@@ -127,7 +123,7 @@ public class screen2 extends AppCompatActivity {
 
 
         //------------------------입력을 완수하고 다음 activity로 넘어간다.--------------------
-        Intent intent = new Intent(this, MainActivity.class); //넘겨드릴때 class이름이 1이시면 바꾸기!!
+        Intent intent = new Intent(this, screen1.class); //넘겨드릴때 class이름이 1이시면 바꾸기!!
         startActivity(intent);
 
     }
