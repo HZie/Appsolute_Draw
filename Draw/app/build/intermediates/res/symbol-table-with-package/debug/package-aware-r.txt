@@ -749,6 +749,7 @@ id icon
 id icon_group
 id ifRoom
 id image
+id imageButton
 id imageButton10
 id imageButton11
 id imageButton3
@@ -835,6 +836,7 @@ id topPanel
 id uniform
 id up
 id useLogo
+id widget_text
 id withText
 id wrap
 id wrap_content
@@ -886,6 +888,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 layout widget
+layout widget2
 mipmap ic_launcher
 mipmap ic_launcher_round
 string abc_action_bar_home_description
