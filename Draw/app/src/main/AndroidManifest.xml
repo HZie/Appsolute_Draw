@@ -28,15 +28,9 @@
         <!-- 위젯 선언 끝 -->
 
 
-<<<<<<< HEAD
-        <activity android:name=".screen2"
-=======
-        <activity android:name=".screen2" />
 
+        <activity android:name=".screen2">
 
-        <activity android:name=".MainActivity"
->>>>>>> 0da40f3109c371f238cc008b24b7818c1db9ffa0
-            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
