@@ -706,6 +706,7 @@ id add
 id alertTitle
 id all
 id always
+id appwidget_text
 id async
 id barrier
 id beginning
@@ -877,6 +878,7 @@ layout activity_main
 layout activity_screen1
 layout activity_screen2
 layout item
+layout new_app_widget
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big

@@ -3,6 +3,7 @@ package com.example.draw;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,6 +17,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 
 public class screen2 extends AppCompatActivity {
 
@@ -62,6 +64,7 @@ public class screen2 extends AppCompatActivity {
         //파일을 저장하고 다음 1번 screen로 넘어감.
 
         try {
+
             FileInputStream file = new FileInputStream("data.xls");
             Workbook workbook = new HSSFWorkbook(file);
             Sheet sheet = workbook.getSheet("0");
@@ -109,14 +112,20 @@ public class screen2 extends AppCompatActivity {
             cell = row.createCell(1);
             cell.setCellValue(content);
 
+            String filename="data.xls";
+            File dir = getFilesDir();
+            File xls = new File(dir,filename);
+
             //파일 output
             try {
-                File excelFile = new File(this.getFilesDir(), "data.xls");
-                FileOutputStream os = new FileOutputStream(excelFile);
+                OutputStream os = new FileOutputStream(xls);
                 workbook.write(os);
+                Toast.makeText(getApplicationContext(),xls.getAbsolutePath()+"에 저장되었습니다",Toast.LENGTH_SHORT).show();
             } catch (IOException e) {
                 e.printStackTrace();
             }
+
+
         } catch (java.io.IOException ex) {
             ex.printStackTrace();
         }
@@ -128,6 +137,7 @@ public class screen2 extends AppCompatActivity {
 
     }
 
-}
 
+
+}
 

@@ -11,7 +11,7 @@
 9-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:5:5-44:19
+11-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:5:5-37:19
 12        android:allowBackup="true"
 12-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -52,29 +52,27 @@
 34-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:25:17-58
 35                android:resource="@xml/widget_info" />
 35-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:26:17-52
-36        </receiver>
-37        <!-- 위젯 선언 끝 -->
-38
-39        <activity android:name="com.example.draw.screen1" >
-39-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:32:9-40:20
-39-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:32:19-42
-40            <intent-filter>
-40-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:34:13-38:29
-41                <action android:name="android.intent.action.MAIN" />
-41-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:35:17-69
-41-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:35:25-66
-42
-43                <category android:name="android.intent.category.LAUNCHER" />
-43-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:37:17-77
-43-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:37:27-74
-44            </intent-filter>
-45        </activity>
-46        <activity android:name="com.example.draw.MainActivity" />
-46-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:42:9-59
-46-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:42:19-47
-47        <activity android:name="com.example.draw.screen2" />
-47-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:43:9-54
-47-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:43:19-42
-48    </application>
-49
-50</manifest>
+36        </receiver> <!-- 위젯 선언 끝 -->
+37        <activity android:name="com.example.draw.screen1" >
+37-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:28:9-34:20
+37-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:28:19-42
+38            <intent-filter>
+38-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:29:13-33:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:30:17-69
+39-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:30:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:32:17-77
+41-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:32:27-74
+42            </intent-filter>
+43        </activity>
+44        <activity android:name="com.example.draw.MainActivity" />
+44-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:35:9-50
+44-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:35:19-47
+45        <activity android:name="com.example.draw.screen2" />
+45-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:36:9-45
+45-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:36:19-42
+46    </application>
+47
+48</manifest>

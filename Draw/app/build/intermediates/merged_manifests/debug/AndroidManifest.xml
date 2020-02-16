@@ -33,9 +33,7 @@
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/widget_info" />
-        </receiver>
-        <!-- 위젯 선언 끝 -->
-
+        </receiver> <!-- 위젯 선언 끝 -->
         <activity android:name="com.example.draw.screen1" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

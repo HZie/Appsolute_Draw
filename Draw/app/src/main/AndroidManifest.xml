@@ -20,27 +20,20 @@
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
 
-            <!-- 이 브로드캐스트 리시버가 위젯임을 명시 & 명세파일 위치 면시-->
+            <!-- 이 브로드캐스트 리시버가 위젯임을 명시 & 명세파일 위치 면시 -->
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/widget_info" />
-        </receiver>
-        <!-- 위젯 선언 끝 -->
-
-
-
+        </receiver> <!-- 위젯 선언 끝 -->
         <activity android:name=".screen1">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".screen2"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".screen2" />
     </application>
 
 </manifest>
