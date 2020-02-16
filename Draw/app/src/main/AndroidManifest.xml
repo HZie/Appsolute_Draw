@@ -19,17 +19,17 @@
                 android:resource="@xml/widget_info" />
         </receiver>
 
-        <activity android:name=".screen2" >
+        <activity android:name=".screen2" />
+
+
+        <activity android:name=".MainActivity"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
-        </activity>
-
-        <activity android:name=".MainActivity"
-            android:launchMode="singleTop">
         </activity>
     </application>
 
