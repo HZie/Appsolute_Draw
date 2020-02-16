@@ -17,27 +17,35 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <receiver android:name="com.example.draw.widget" >
+
+        <!-- 위젯 선언 -->
+        <receiver
+            android:name="com.example.draw.widget"
+            android:label="draw_widget" >
+
+            <!-- 위젯에서 수신할 action들 정의 -->
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
 
+            <!-- 이 브로드캐스트 리시버가 위젯임을 명시 & 명세파일 위치 면시 -->
             <meta-data
                 android:name="android.appwidget.provider"
                 android:resource="@xml/widget_info" />
         </receiver>
+        <!-- 위젯 선언 끝 -->
 
-        <activity android:name="com.example.draw.screen2" />
-        <activity
-            android:name="com.example.draw.MainActivity"
-            android:launchMode="singleTop" >
+        <activity android:name="com.example.draw.screen1" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.draw.MainActivity" />
+        <activity android:name="com.example.draw.screen2" />
     </application>
 
 </manifest>

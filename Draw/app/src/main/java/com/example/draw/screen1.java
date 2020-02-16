@@ -32,7 +32,7 @@ public class screen1 extends AppCompatActivity {
 
         Button add = findViewById(R.id.add);
         add.setOnClickListener(v -> {
-            Intent intent = new Intent(screen1.this,screen2.class);
+            Intent intent = new Intent(screen1.this,MainActivity.class);
             startActivity(intent);
         });
 

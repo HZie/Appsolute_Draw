@@ -754,10 +754,6 @@ id imageButton10
 id imageButton11
 id imageButton3
 id imageButton4
-id imgBtn_tag01
-id imgBtn_tag02
-id imgBtn_tag03
-id imgBtn_tag04
 id info
 id invisible
 id italic
@@ -836,6 +832,10 @@ id topPanel
 id uniform
 id up
 id useLogo
+id widget_imgBtn_boring
+id widget_imgBtn_healing
+id widget_imgBtn_motive
+id widget_imgBtn_refresh
 id widget_text
 id withText
 id wrap
