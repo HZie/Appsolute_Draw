@@ -25,10 +25,12 @@ public class widget extends AppWidgetProvider {
         appWidgetManager.updateAppWidget(appWidgetId, views);
     }
 
-    public PendingIntent getPendingSelfIntent(Context context, String action){
+    // tag_id: motive = 101, healing = 102, boring =103, refresh = 104
+    public PendingIntent getPendingSelfIntent(Context context, int tag_id){
         Intent intent = new Intent(context, widget2.class);
-        intent.setAction(action);
-        return PendingIntent.getBroadcast(context,0,intent,0);
+        intent.setAction("FROM_WIDGET01");
+        intent.putExtra("tag",tag_id);
+        return PendingIntent.getActivity(context,tag_id,intent,0);
     }
 
     @Override
@@ -40,7 +42,12 @@ public class widget extends AppWidgetProvider {
 
 
             RemoteViews views = new RemoteViews(context.getPackageName(),R.layout.widget);
-            views.setOnClickPendingIntent(R.id.imgBtn_tag01, pendingIntent);
+
+            // 버튼 정의
+            views.setOnClickPendingIntent(R.id.widget_imgBtn_motive, getPendingSelfIntent(context,101));
+            views.setOnClickPendingIntent(R.id.widget_imgBtn_healing,getPendingSelfIntent(context,102));
+            views.setOnClickPendingIntent(R.id.widget_imgBtn_boring, getPendingSelfIntent(context,103));
+            views.setOnClickPendingIntent(R.id.widget_imgBtn_refresh, getPendingSelfIntent(context,104));
 
 
             appWidgetManager.updateAppWidget(appWidgetId,views);
