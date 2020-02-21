@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:2:1-39:12
+ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:2:1-43:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\JH\.gradle\caches\transforms-2\files-2.1\dfb17c32c9e1bced7bb89f3e844a7607\appcompat-1.0.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\JH\.gradle\caches\transforms-2\files-2.1\c1763829f79bc3811543d2bb9a22b866\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\JH\.gradle\caches\transforms-2\files-2.1\99839343cfb353ec06147cc6109cf9b2\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -32,25 +32,25 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\JH\.gradle\cache
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\JH\.gradle\caches\transforms-2\files-2.1\e7284bace20bec096294b5474e153fbf\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\JH\.gradle\caches\transforms-2\files-2.1\c073c929da6ad4e112abaac7d3212747\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\JH\.gradle\caches\transforms-2\files-2.1\e72949b043b8df7a6068dab5e7cd21f2\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:2:1-39:12
-INJECTED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:2:1-39:12
+INJECTED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:2:1-43:12
 	package
 		ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:3:5-31
 		INJECTED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml
 		INJECTED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml
-		ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:2:1-43:12
 		INJECTED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml
-		ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:2:1-39:12
+		ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:2:1-43:12
 		INJECTED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:5:5-37:19
+ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:5:5-41:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\JH\.gradle\caches\transforms-2\files-2.1\c1763829f79bc3811543d2bb9a22b866\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\JH\.gradle\caches\transforms-2\files-2.1\c1763829f79bc3811543d2bb9a22b866\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.core:core:1.0.1] C:\Users\JH\.gradle\caches\transforms-2\files-2.1\46da25c3e2ae6308b2227b660caa604d\core-1.0.1\AndroidManifest.xml:22:5-89
@@ -72,45 +72,49 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\JH
 	android:theme
 		ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:11:9-40
 receiver#com.example.draw.widget
-ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:14:9-27:20
+ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:14:9-28:20
 	android:label
 		ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:16:13-40
 	android:name
 		ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:15:13-35
-intent-filter#action:name:android.appwidget.action.APPWIDGET_UPDATE
-ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:19:13-21:29
+intent-filter#action:name:android.action.WIDGET_BUTTON+action:name:android.appwidget.action.APPWIDGET_UPDATE
+ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:19:13-22:29
 action#android.appwidget.action.APPWIDGET_UPDATE
 ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:20:17-84
 	android:name
 		ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:20:25-81
+action#android.action.WIDGET_BUTTON
+ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:21:17-70
+	android:name
+		ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:21:25-68
 meta-data#android.appwidget.provider
-ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:24:13-26:55
+ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:25:13-27:55
 	android:resource
-		ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:26:17-52
+		ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:27:17-52
 	android:name
-		ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:25:17-58
+		ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:26:17-58
 activity#com.example.draw.screen1
-ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:28:9-34:20
+ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:32:9-38:20
 	android:name
-		ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:28:19-42
+		ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:32:19-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:29:13-33:29
+ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:33:13-37:29
 action#android.intent.action.MAIN
-ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:30:17-69
+ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:34:17-69
 	android:name
-		ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:30:25-66
+		ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:34:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:32:17-77
+ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:36:17-77
 	android:name
-		ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:32:27-74
+		ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:36:27-74
 activity#com.example.draw.MainActivity
-ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:35:9-50
+ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:39:9-50
 	android:name
-		ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:35:19-47
+		ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:39:19-47
 activity#com.example.draw.screen2
-ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:36:9-45
+ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:40:9-45
 	android:name
-		ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:36:19-42
+		ADDED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:40:19-42
 uses-sdk
 INJECTED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml

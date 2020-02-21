@@ -6,13 +6,15 @@
     android:padding="@dimen/widget_margin">
 
     <LinearLayout
+        android:id="@+id/widget_layout_01"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
         android:layout_marginBottom="0dp"
         android:baselineAligned="true"
         android:gravity="center"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:visibility="visible">
 
 
         <ImageButton

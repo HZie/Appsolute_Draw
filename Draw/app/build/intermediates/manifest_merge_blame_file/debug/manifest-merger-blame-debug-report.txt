@@ -11,7 +11,7 @@
 9-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:5:5-37:19
+11-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:5:5-41:19
 12        android:allowBackup="true"
 12-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -31,7 +31,7 @@
 21
 22        <!-- 위젯 선언 -->
 23        <receiver
-23-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:14:9-27:20
+23-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:14:9-28:20
 24            android:name="com.example.draw.widget"
 24-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:15:13-35
 25            android:label="draw_widget" >
@@ -39,40 +39,46 @@
 26
 27            <!-- 위젯에서 수신할 action들 정의 -->
 28            <intent-filter>
-28-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:19:13-21:29
+28-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:19:13-22:29
 29                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
 29-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:20:17-84
 29-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:20:25-81
-30            </intent-filter>
-31
-32            <!-- 이 브로드캐스트 리시버가 위젯임을 명시 & 명세파일 위치 면시 -->
-33            <meta-data
-33-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:24:13-26:55
-34                android:name="android.appwidget.provider"
-34-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:25:17-58
-35                android:resource="@xml/widget_info" />
-35-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:26:17-52
-36        </receiver> <!-- 위젯 선언 끝 -->
-37        <activity android:name="com.example.draw.screen1" >
-37-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:28:9-34:20
-37-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:28:19-42
-38            <intent-filter>
-38-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:29:13-33:29
-39                <action android:name="android.intent.action.MAIN" />
-39-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:30:17-69
-39-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:30:25-66
+30                <action android:name="android.action.WIDGET_BUTTON" />
+30-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:21:17-70
+30-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:21:25-68
+31            </intent-filter>
+32
+33            <!-- 이 브로드캐스트 리시버가 위젯임을 명시 & 명세파일 위치 면시 -->
+34            <meta-data
+34-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:25:13-27:55
+35                android:name="android.appwidget.provider"
+35-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:26:17-58
+36                android:resource="@xml/widget_info" />
+36-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:27:17-52
+37        </receiver>
+38
+39        <!-- 위젯 선언 끝 -->
 40
-41                <category android:name="android.intent.category.LAUNCHER" />
-41-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:32:17-77
-41-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:32:27-74
-42            </intent-filter>
-43        </activity>
-44        <activity android:name="com.example.draw.MainActivity" />
-44-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:35:9-50
-44-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:35:19-47
-45        <activity android:name="com.example.draw.screen2" />
-45-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:36:9-45
-45-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:36:19-42
-46    </application>
-47
-48</manifest>
+41        <activity android:name="com.example.draw.screen1" >
+41-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:32:9-38:20
+41-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:32:19-42
+42            <intent-filter>
+42-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:33:13-37:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:34:17-69
+43-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:34:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:36:17-77
+45-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:36:27-74
+46            </intent-filter>
+47        </activity>
+48        <activity android:name="com.example.draw.MainActivity" />
+48-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:39:9-50
+48-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:39:19-47
+49        <activity android:name="com.example.draw.screen2" />
+49-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:40:9-45
+49-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:40:19-42
+50    </application>
+51
+52</manifest>

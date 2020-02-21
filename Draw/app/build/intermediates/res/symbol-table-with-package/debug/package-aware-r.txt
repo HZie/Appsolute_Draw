@@ -750,7 +750,6 @@ id icon
 id icon_group
 id ifRoom
 id image
-id imageButton
 id imageButton10
 id imageButton11
 id imageButton3
@@ -833,10 +832,13 @@ id topPanel
 id uniform
 id up
 id useLogo
+id widget_imgBtn_back
 id widget_imgBtn_boring
 id widget_imgBtn_healing
 id widget_imgBtn_motive
 id widget_imgBtn_refresh
+id widget_layout_01
+id widget_layout_02
 id widget_text
 id withText
 id wrap
