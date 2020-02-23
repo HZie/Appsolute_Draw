@@ -1,6 +1,7 @@
 package com.example.draw;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -43,19 +44,18 @@ public class screen2 extends AppCompatActivity {
     }
 
     public void bt1(View view) {
-        fileOut("motive", getStr());
+        sharedOut("motive", getStr());
     }
 
     public void bt2(View view) {
-        fileOut("healing", getStr());
+        sharedOut("healing", getStr());
     }
 
     public void bt3(View view) {
-        fileOut("boring", getStr());
+        sharedOut("boring", getStr());
     }
 
-    public void bt4(View view) {
-        fileOut("refresh", getStr());
+    public void bt4(View view) { sharedOut("refresh", getStr());
     }
 
 
@@ -137,6 +137,60 @@ public class screen2 extends AppCompatActivity {
 
     }
 
+    //sharedPreference 를 사용한 file output을 사용
+    public void sharedOut(String tag,String content){
+        // '저장된 각 항목 갯수' key를 motive=mNum boring=bNum healing=hNum refresh=rNum으로 설정
+        //실제 내용은 key를 캐그이름+'그 태그 갯수+1' 로 하겠음.
+
+        //저장될 태그의 지금까지 갯수
+        int num = 0;
+
+        //저장된 값을 불러오기위해 sFile을 찾음. 존재 안 할 수도 있음.
+        SharedPreferences sf = getSharedPreferences("sFile",MODE_PRIVATE);
+
+        //만약 파일에 값이 없다면? num은 0으로 그냥 두기.
+        try{
+
+            switch(tag){
+                case "motive": num = Integer.parseInt(sf.getString("mNum","0")); break;
+                case "boring" : num = Integer.parseInt(sf.getString("bNum","0")); break;
+                case "healing": num = Integer.parseInt(sf.getString("hNum","0")); break;
+                case "refresh" : num = Integer.parseInt(sf.getString("rNum","0")); break;
+            }
+        }catch(Exception e){num=0;}
+
+        //이제 저장할 항목은 num+1번째.
+        num=num+1;
+
+        //입력 내용 저장
+        SharedPreferences.Editor editor = sf.edit();
+        editor.putString( (tag+num) ,content);
+
+        //tag + num 갯수 삭제 후 업데이트
+        String tagNum= tag.substring(0, 1)+ "Num"; //mNum bNum hNum rNum
+        editor.remove(tagNum);
+        editor.putString(tagNum, Integer.toString(num) );
+        editor.commit();
+
+
+        //------------------------입력을 완수하고 다음 activity로 넘어간다.--------------------
+        Intent intent = new Intent(this, screen1.class); //넘겨드릴때 class이름이 1이시면 바꾸기!!
+        startActivity(intent);
+
+
+    }//end of sharedOut
+
+
+    //출력되는지 테스트용 함수
+    public void getResult(){
+
+        //저장된 값을 불러오기 위해 같은 네임파일을 찾음.
+        SharedPreferences sf = getSharedPreferences("sFile",MODE_PRIVATE);
+        //text라는 key에 저장된 값이 있는지 확인. 아무값도 들어있지 않으면 "스트링 반환 실패"를 반환
+        String text = sf.getString("motive1","스트링 반환 실패");
+        Toast.makeText(this,text,Toast.LENGTH_SHORT).show();
+
+    }//end of getResult
 
 
 }
