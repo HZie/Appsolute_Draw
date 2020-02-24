@@ -6,59 +6,80 @@ import android.appwidget.AppWidgetProvider;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.util.Log;
+import android.view.View;
 import android.widget.RemoteViews;
 
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-
-import java.io.FileInputStream;
+import static android.content.Context.MODE_PRIVATE;
 
 /**
  * Implementation of App Widget functionality.
  */
 public class widget extends AppWidgetProvider {
+    static String tag = "tag";
+    static int widget_screen = 1;
 
-
-    // tag_id: motive = 101, healing = 102, boring =103, refresh = 104
-    public PendingIntent getPendingIntent(Context context, int tag_id){
-        Log.d(this.getClass().getName(),"button "+tag_id+" is set");
+    // tag_id: motive = 101, healing = 102, boring =103, refresh = 104, etc = 201
+    // situation: widget layout 1 --> 2 = 12, widget layout 2 --> 1 = 21, refresh = 22
+    public PendingIntent getPendingIntent(Context context, int tag_id, int situation){
         Intent intent = new Intent(context,widget.class);
-        intent.setAction("android.action.WIDGET_BUTTON");
-        intent.putExtra("tag",tag_id);
+
+        if(situation == 12){
+            intent.setAction("android.action.TAG_BUTTON");
+            Log.d(this.getClass().getName(),"button "+tag_id+" is set");
+            intent.putExtra("tag",tag_id);
+        }
+        else if(situation == 21){
+            intent.setAction("android.action.BACK_BUTTON");
+            Log.d(this.getClass().getName(),"back button is set");
+
+        }
+        else if(situation == 22){
+            intent.setAction("android.action.REFRESH_BUTTON");
+            Log.d(this.getClass().getName(),"refresh button is set");
+
+        }
+
         return PendingIntent.getBroadcast(context,tag_id,intent,0);
+
     }
-    int widget_screen = 1;
+
 
     @Override
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
         // There may be multiple widgets active, so update all of them
 
         for (int appWidgetId : appWidgetIds) {
-            RemoteViews views = setRemoteViews(context, widget_screen);
+            RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.widget);
 
             Log.d(this.getClass().getName(),"widget is updated");
-            // 버튼 정의
-            views.setOnClickPendingIntent(R.id.widget_imgBtn_motive, getPendingIntent(context,101));
-            views.setOnClickPendingIntent(R.id.widget_imgBtn_healing,getPendingIntent(context,102));
-            views.setOnClickPendingIntent(R.id.widget_imgBtn_boring, getPendingIntent(context,103));
-            views.setOnClickPendingIntent(R.id.widget_imgBtn_refresh, getPendingIntent(context,104));
+            widget_screen = 1;
+            setLayout(views,widget_screen);
 
+            // 버튼 정의
+            views.setOnClickPendingIntent(R.id.widget_imgBtn_motive, getPendingIntent(context,101,12));
+            views.setOnClickPendingIntent(R.id.widget_imgBtn_healing,getPendingIntent(context,102,12));
+            views.setOnClickPendingIntent(R.id.widget_imgBtn_boring, getPendingIntent(context,103,12));
+            views.setOnClickPendingIntent(R.id.widget_imgBtn_refresh, getPendingIntent(context,104,12));
+
+            views.setOnClickPendingIntent(R.id.widget_imgBtn_back,getPendingIntent(context, 201,21));
+            views.setOnClickPendingIntent(R.id.widget_text,getPendingIntent(context,201,22));
 
             appWidgetManager.updateAppWidget(appWidgetId,views);
-
         }
     }
 
 
-    public RemoteViews setRemoteViews(Context context, int widget_screen){
-        int layout_id = R.layout.widget;
-        if(widget_screen == 1)
-            layout_id = R.layout.widget;
-        else if(widget_screen == 2)
-            layout_id = R.layout.widget2;
-        return new RemoteViews(context.getPackageName(), layout_id);
+    public void setLayout(RemoteViews views, int widget_screen){
+        if(widget_screen==1){
+            views.setViewVisibility(R.id.widget_layout_01,View.VISIBLE);
+            views.setViewVisibility(R.id.widget_layout_02,View.GONE);
+        }
+        else if(widget_screen == 2){
+            views.setViewVisibility(R.id.widget_layout_01,View.GONE);
+            views.setViewVisibility(R.id.widget_layout_02,View.VISIBLE);
+        }
     }
 
     @Override
@@ -71,38 +92,25 @@ public class widget extends AppWidgetProvider {
         // Enter relevant functionality for when the last widget is disabled
     }
 
+
     public void onReceive(Context context, Intent intent){
         super.onReceive(context,intent);
 
-        String tag = "tag";
-        String WIDGET_ACTION = "android.action.WIDGET_BUTTON";
+        String TAG_ACTION = "android.action.TAG_BUTTON";
+        String BACK_ACTION = "android.action.BACK_BUTTON";
+        String REFRESH_ACTION = "android.action.REFRESH_BUTTON";
+        RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.widget);
 
         // 수신한 인텐트로부터 데이터 읽기
         String action = intent.getAction();
         int tag_id = 0;
-        if(action.equals(WIDGET_ACTION)){
-            tag_id = intent.getIntExtra("tag",0);
-        }
 
-        Log.d(this.getClass().getName(),"widget onReceive() with tag_id " + tag_id);
-
-
-        if(tag_id == 0)
-            return;
-
-        Log.d(this.getClass().getName(),"set view in onReceive()");
-        widget_screen = 2;
-
-        // remote view 생성
-        RemoteViews views = setRemoteViews(context, widget_screen);
-
-/*
         // tag_id: motive = 101, healing = 102, boring =103, refresh = 104
-        if(action.equals(WIDGET_ACTION)){
-            int tag_id = intent.getIntExtra("tag",0);
-
-
-            switch(tag_id){
+        if(action.equals(TAG_ACTION)) {
+            Log.d(this.getClass().getName(),"tag action is activated");
+            tag_id = intent.getIntExtra("tag", 0);
+            widget_screen = 2;
+            switch (tag_id) {
                 case 101:
                     tag = "motive";
                     break;
@@ -119,34 +127,59 @@ public class widget extends AppWidgetProvider {
                     break;
             }
 
+
+
+        }
+
+        if(action.equals(BACK_ACTION)){
+            widget_screen = 1;
+            Log.d(this.getClass().getName(),"back action is activated");
+        }
+
+        if(action.equals(REFRESH_ACTION)){
+            widget_screen = 2;
+            Log.d(this.getClass().getName(),"refresh action is activated");
+
+        }
+
+        setLayout(views, widget_screen);
+        Log.d(this.getClass().getName(),"set Layout in onReceive() with widget_screen " + widget_screen);
+
+        if(action.equals(TAG_ACTION) || action.equals(REFRESH_ACTION)){
             // 텍스트 불러오기
-            views.setTextViewText(R.id.widget_text, readData(tag));
-*/
-        views.setTextViewText(R.id.widget_text, "Hello "+tag);
+            views.setTextViewText(R.id.widget_text, readData(context, tag));
+        }
+
         // 위젯 화면 갱신
         AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(context);
         ComponentName cpName = new ComponentName(context,widget.class);
         appWidgetManager.updateAppWidget(cpName,views);
+
     }
 
-    // 엑셀 파일에서 데이터 읽기 (작업중)
-    public String readData(String tag){
-        String content = "still working";
+    // 데이터 읽기 (작업중)
+    public String readData(Context context,String tag){
+        String content = "No Data";
+        //저장된 값을 불러오기 위해 같은 네임파일을 찾음.
+        SharedPreferences sf = context.getSharedPreferences("sFile",MODE_PRIVATE);
+        int fileNum = 0;
+
+        //만약 파일에 값이 없다면? num은 0으로 그냥 두기.
         try{
-            FileInputStream file = new FileInputStream("data.xls");
-            Workbook workbook = new HSSFWorkbook(file);
-            Sheet sheet = workbook.getSheet("0");
-            int rows = sheet.getPhysicalNumberOfRows();
-            String data_tag = null;
-
-            do{
-                int rowindex = (int)(Math.random()*rows);
-
-            }while(!data_tag.equals(tag));
-
-        }catch(java.io.IOException ex){
-            System.out.println("IO exception is occured");
+            switch(tag){
+                case "motive": fileNum = Integer.parseInt(sf.getString("mNum","0")); break;
+                case "boring" : fileNum = Integer.parseInt(sf.getString("bNum","0")); break;
+                case "healing": fileNum = Integer.parseInt(sf.getString("hNum","0")); break;
+                case "refresh" : fileNum = Integer.parseInt(sf.getString("rNum","0")); break;
+            }
+        }catch(Exception e){
+            return content;
         }
+
+        int random = (int)(Math.random() * fileNum)+1;
+
+        content = sf.getString(tag+random,"No data");
+
         return content;
     }
 

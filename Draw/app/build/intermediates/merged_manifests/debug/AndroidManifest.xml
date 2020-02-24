@@ -16,6 +16,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
 
         <!-- 위젯 선언 -->
@@ -26,7 +27,6 @@
             <!-- 위젯에서 수신할 action들 정의 -->
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-                <action android:name="android.action.WIDGET_BUTTON" />
             </intent-filter>
 
             <!-- 이 브로드캐스트 리시버가 위젯임을 명시 & 명세파일 위치 면시 -->

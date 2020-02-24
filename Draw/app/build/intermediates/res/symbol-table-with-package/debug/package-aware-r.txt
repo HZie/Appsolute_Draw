@@ -706,7 +706,6 @@ id add
 id alertTitle
 id all
 id always
-id appwidget_text
 id async
 id barrier
 id beginning
@@ -880,7 +879,6 @@ layout activity_main
 layout activity_screen1
 layout activity_screen2
 layout item
-layout new_app_widget
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -892,7 +890,6 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 layout widget
-layout widget2
 mipmap ic_launcher
 mipmap ic_launcher_round
 string abc_action_bar_home_description
