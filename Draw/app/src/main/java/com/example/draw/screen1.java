@@ -16,7 +16,7 @@ public class screen1 extends AppCompatActivity {
 
     RecyclerView mRecyclerView = null ;
     RecyclerAdapter mAdapter = null ;
-    ArrayList<RecyclerItem> mList = new ArrayList<RecyclerItem>();
+    ArrayList<RecyclerItem> mList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,29 +51,33 @@ public class screen1 extends AppCompatActivity {
         int rNum = Integer.parseInt(sf.getString("rNum","0"));
 
         // 아이템 추가
+        if(mNum>0){
         for(int i=1; i==mNum; i++){
             image = getDrawable(R.drawable.icon1);
             context = sf.getString("motivate"+i, null);
             addItem(image, context);
-        }
+        }}
 
+        if(hNum>0){
         for(int i=1; i==hNum; i++){
             image = getDrawable(R.drawable.icon2);
             context = sf.getString("healing"+i, null);
             addItem(image, context);
-        }
+        }}
 
+        if(bNum>0){
         for(int i=1; i==bNum; i++){
             image = getDrawable(R.drawable.icon3);
             context = sf.getString("boring"+i, null);
             addItem(image, context);
-        }
+        }}
 
+        if(rNum>0){
         for(int i=1; i==rNum; i++){
             image = getDrawable(R.drawable.icon4);
             context = sf.getString("refresh"+i, null);
             addItem(image, context);
-        }
+        }}
 
         mAdapter.notifyDataSetChanged();
     }

@@ -1,7 +1,6 @@
 package com.example.draw;
 
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,15 +8,14 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-import static android.content.Context.MODE_PRIVATE;
-
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
-    private ArrayList<RecyclerItem> mData = null;
+    private ArrayList<RecyclerItem> mData;
 
     // 생성자에서 데이터 리스트 객체를 전달받음.
     RecyclerAdapter(ArrayList<RecyclerItem> list) {
@@ -25,6 +23,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
     }
 
     // onCreateViewHolder() - 아이템 뷰를 위한 뷰홀더 객체 생성하여 리턴.
+    @NonNull
     @Override
     public RecyclerAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         Context context = parent.getContext();
@@ -35,9 +34,6 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
         return vh;
     }
-
-    private Context mContext;
-    SharedPreferences sf = mContext.getSharedPreferences("sFile", MODE_PRIVATE);
 
     // onBindViewHolder() - position에 해당하는 데이터를 뷰홀더의 아이템뷰에 표시.
     @Override
@@ -51,13 +47,14 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         holder.button.setOnClickListener(v -> {
             int pos = (int) v.getTag();
             mData.remove(pos);
-
+/*
             int mNum = Integer.parseInt(sf.getString("mNum","0"));
             int hNum = Integer.parseInt(sf.getString("hNum","0"));
             int bNum = Integer.parseInt(sf.getString("bNum","0"));
             int rNum = Integer.parseInt(sf.getString("rNum","0"));
 
             SharedPreferences.Editor editor = sf.edit();
+
 
             if(pos<=mNum){
                 editor.remove("motivate"+pos);
@@ -78,6 +75,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
                 editor.remove("refresh"+num);
                 editor.commit();
             }
+*/
 
             notifyDataSetChanged();
         });
