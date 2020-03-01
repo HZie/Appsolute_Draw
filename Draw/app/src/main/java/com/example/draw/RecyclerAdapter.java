@@ -1,6 +1,7 @@
 package com.example.draw;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+
+import static android.content.Context.MODE_PRIVATE;
 
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
@@ -47,7 +50,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         holder.button.setOnClickListener(v -> {
             int pos = (int) v.getTag();
             mData.remove(pos);
-/*
+
+            SharedPreferences sf = v.getContext().getSharedPreferences("sFile",MODE_PRIVATE);
+
             int mNum = Integer.parseInt(sf.getString("mNum","0"));
             int hNum = Integer.parseInt(sf.getString("hNum","0"));
             int bNum = Integer.parseInt(sf.getString("bNum","0"));
@@ -58,24 +63,20 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
             if(pos<=mNum){
                 editor.remove("motivate"+pos);
-                editor.commit();
             }
             else if(pos-mNum<= hNum) {
                 int num = pos-mNum;
                 editor.remove("healing"+num);
-                editor.commit();
             }
             else if(pos-mNum-hNum<= bNum) {
                 int num = pos-mNum-hNum;
                 editor.remove("boring"+num);
-                editor.commit();
             }
             else if(pos-mNum-hNum-bNum<= rNum) {
                 int num = pos-mNum-hNum-bNum;
                 editor.remove("refresh"+num);
-                editor.commit();
             }
-*/
+            editor.apply();
 
             notifyDataSetChanged();
         });
