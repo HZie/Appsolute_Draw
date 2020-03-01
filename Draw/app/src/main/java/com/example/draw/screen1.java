@@ -1,6 +1,7 @@
 package com.example.draw;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.widget.Button;
@@ -9,13 +10,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-
-import java.io.FileInputStream;
 import java.util.ArrayList;
 
 public class screen1 extends AppCompatActivity {
@@ -45,35 +39,42 @@ public class screen1 extends AppCompatActivity {
         mAdapter = new RecyclerAdapter(mList) ;
         mRecyclerView.setAdapter(mAdapter) ;
 
-        // 엑셀 파일 읽기
-        try{
-            FileInputStream file = new FileInputStream("data.xls");
-            Workbook workbook = new HSSFWorkbook(file);
-            Sheet sheet = workbook.getSheet("0");
-            int rowCount = sheet.getLastRowNum();
+        // 파일 읽기
+        SharedPreferences sf = getSharedPreferences("sFile",MODE_PRIVATE);
 
-            String context = null;
-            Drawable image = null;
+        String context;
+        Drawable image;
 
-            //아이템 추가
-            for(int i=1;i==rowCount;i++){
-                addItem(image,context);
-                Row row = sheet.getRow(i);
-                Cell cell1 = row.getCell(1);
-                String tag = cell1.getStringCellValue();
-                switch(tag){
-                    case "motive": image=getDrawable(R.drawable.icon1);
-                    case "healing": image=getDrawable(R.drawable.icon2);
-                    case "refresh": image=getDrawable(R.drawable.icon3);
-                    case "boring": image=getDrawable(R.drawable.icon4);
-                }
-                Cell cell2 = row.getCell(2);
-                context = cell2.getStringCellValue();
-            }
-            workbook.close();
-        }catch (java.io.IOException ex){
+        int mNum = Integer.parseInt(sf.getString("mNum","0"));
+        int hNum = Integer.parseInt(sf.getString("hNum","0"));
+        int bNum = Integer.parseInt(sf.getString("bNum","0"));
+        int rNum = Integer.parseInt(sf.getString("rNum","0"));
 
+        // 아이템 추가
+        for(int i=1; i==mNum; i++){
+            image = getDrawable(R.drawable.icon1);
+            context = sf.getString("motivate"+i, null);
+            addItem(image, context);
         }
+
+        for(int i=1; i==hNum; i++){
+            image = getDrawable(R.drawable.icon2);
+            context = sf.getString("healing"+i, null);
+            addItem(image, context);
+        }
+
+        for(int i=1; i==bNum; i++){
+            image = getDrawable(R.drawable.icon3);
+            context = sf.getString("boring"+i, null);
+            addItem(image, context);
+        }
+
+        for(int i=1; i==rNum; i++){
+            image = getDrawable(R.drawable.icon4);
+            context = sf.getString("refresh"+i, null);
+            addItem(image, context);
+        }
+
         mAdapter.notifyDataSetChanged();
     }
 

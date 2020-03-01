@@ -1,6 +1,7 @@
 package com.example.draw;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,16 +11,10 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.RichTextString;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.util.ArrayList;
+
+import static android.content.Context.MODE_PRIVATE;
+
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
     private ArrayList<RecyclerItem> mData = null;
@@ -41,6 +36,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         return vh;
     }
 
+    private Context mContext;
+    SharedPreferences sf = mContext.getSharedPreferences("sFile", MODE_PRIVATE);
+
     // onBindViewHolder() - position에 해당하는 데이터를 뷰홀더의 아이템뷰에 표시.
     @Override
     public void onBindViewHolder(RecyclerAdapter.ViewHolder holder, int position) {
@@ -49,34 +47,39 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
         holder.icon.setImageDrawable(item.getIcon());
         holder.text.setText(item.getText());
-        holder.button.setOnClickListener(view -> {
-            mData.remove(holder.getAdapterPosition());
-            notifyItemRangeChanged(holder.getAdapterPosition(), mData.size());
-            try{
-                FileInputStream file = new FileInputStream("data.xls");
-                Workbook workbook = new HSSFWorkbook(file);
-                Sheet sheet = workbook.getSheet("0");
+        holder.button.setTag(holder.getAdapterPosition());
+        holder.button.setOnClickListener(v -> {
+            int pos = (int) v.getTag();
+            mData.remove(pos);
 
-                int rowCount = sheet.getLastRowNum();
+            int mNum = Integer.parseInt(sf.getString("mNum","0"));
+            int hNum = Integer.parseInt(sf.getString("hNum","0"));
+            int bNum = Integer.parseInt(sf.getString("bNum","0"));
+            int rNum = Integer.parseInt(sf.getString("rNum","0"));
 
-                //데이터 덮어쓰기
-                for(int i=holder.getAdapterPosition();i==rowCount-1;i++){
-                    Row rowB = sheet.getRow(i);
-                    Row row = sheet.getRow(i+1);
-                    Cell cell1 = rowB.getCell(1) ;
-                    Cell cell1A = row.getCell(1);
-                    cell1.setCellValue((RichTextString) cell1A);
-                    Cell cell2 = rowB.getCell(2);
-                    Cell cell2A = row.getCell(2);
-                    cell2.setCellValue((RichTextString) cell2A);
-                }
+            SharedPreferences.Editor editor = sf.edit();
 
-                workbook.write(new FileOutputStream("data.xls"));
-
-                workbook.close();
-            }catch (java.io.IOException ex){
-
+            if(pos<=mNum){
+                editor.remove("motivate"+pos);
+                editor.commit();
             }
+            else if(pos-mNum<= hNum) {
+                int num = pos-mNum;
+                editor.remove("healing"+num);
+                editor.commit();
+            }
+            else if(pos-mNum-hNum<= bNum) {
+                int num = pos-mNum-hNum;
+                editor.remove("boring"+num);
+                editor.commit();
+            }
+            else if(pos-mNum-hNum-bNum<= rNum) {
+                int num = pos-mNum-hNum-bNum;
+                editor.remove("refresh"+num);
+                editor.commit();
+            }
+
+            notifyDataSetChanged();
         });
     }
 
