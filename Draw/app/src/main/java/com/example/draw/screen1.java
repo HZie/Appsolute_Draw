@@ -54,7 +54,7 @@ public class screen1 extends AppCompatActivity {
         if(mNum>0){
         for(int i=1; i==mNum; i++){
             image = getDrawable(R.drawable.icon1);
-            context = sf.getString("motivate"+i, null);
+            context = sf.getString("motive"+i, null);
             addItem(image, context);
         }}
 
