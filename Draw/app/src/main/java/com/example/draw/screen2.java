@@ -65,85 +65,6 @@ public class screen2 extends AppCompatActivity {
     public void bt4(View view) { sharedOut("refresh", getStr());
     }
 
-
-    public void fileOut(String tag, String content) {
-        //tag 와 입력문구를 입력받음
-        //파일을 저장하고 다음 1번 screen로 넘어감.
-
-        try {
-
-            FileInputStream file = new FileInputStream("data.xls");
-            Workbook workbook = new HSSFWorkbook(file);
-            Sheet sheet = workbook.getSheet("0");
-
-            //현재 존재하는 row 갯수
-            int rowCount = sheet.getLastRowNum();
-            //새로운 row추가 및 셀추가, 내용 추가.
-            Row row = sheet.createRow(rowCount + 1);
-            Cell cell = row.createCell(0);
-            cell.setCellValue(tag);
-            cell = row.createCell(1);
-            cell.setCellValue(content);
-
-
-            try {
-                File excelFile = new File(this.getFilesDir(), "data.xls");
-                FileOutputStream os = new FileOutputStream(excelFile);
-                workbook.write(os);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-            file.close();
-
-
-        } catch (java.io.FileNotFoundException exc) {
-
-            //----------------------------엑셀 파일 생성------------------------------------
-            Workbook workbook = new HSSFWorkbook();
-            Sheet sheet = workbook.createSheet(); // 새로운 시트 생성
-            Row row = sheet.createRow(0); // 새로운 행 생성
-            Cell cell;
-            //헤더
-            // 1번 셀 생성과 입력
-            cell = row.createCell(0);
-            cell.setCellValue("tag");
-            //2번 셀
-            cell = row.createCell(1);
-            cell.setCellValue("content");
-
-            //새로운 행 생성과 데이터 입력
-            row = sheet.createRow(1);
-            cell = row.createCell(0);
-            cell.setCellValue(tag);
-            cell = row.createCell(1);
-            cell.setCellValue(content);
-
-            String filename="data.xls";
-            File dir = getFilesDir();
-            File xls = new File(dir,filename);
-
-            //파일 output
-            try {
-                OutputStream os = new FileOutputStream(xls);
-                workbook.write(os);
-                Toast.makeText(getApplicationContext(),xls.getAbsolutePath()+"에 저장되었습니다",Toast.LENGTH_SHORT).show();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-
-        } catch (java.io.IOException ex) {
-            ex.printStackTrace();
-        }
-
-
-        //------------------------입력을 완수하고 다음 activity로 넘어간다.--------------------
-        Intent intent = new Intent(this, screen1.class); //넘겨드릴때 class이름이 1이시면 바꾸기!!
-        startActivity(intent);
-
-    }
-
     //sharedPreference 를 사용한 file output을 사용
     public void sharedOut(String tag,String content){
         // '저장된 각 항목 갯수' key를 motive=mNum boring=bNum healing=hNum refresh=rNum으로 설정
@@ -200,7 +121,8 @@ public class screen2 extends AppCompatActivity {
 
         //------------------------입력을 완수하고 다음 activity로 넘어간다.--------------------
         Intent intent = new Intent(this, screen1.class); //넘겨드릴때 class이름이 1이시면 바꾸기!!
-        intent.putExtra("signal", "UPDATED");
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
 
 

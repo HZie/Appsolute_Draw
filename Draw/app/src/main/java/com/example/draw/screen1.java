@@ -6,6 +6,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -90,6 +91,25 @@ public class screen1 extends AppCompatActivity {
         return dataList;
     }
 
+    private long pressedTime;
 
+    @Override
+    public void onBackPressed() {
+
+        if(pressedTime == 0){
+            Toast.makeText(screen1.this,"한 번 더 누르면 종료됩니다.",Toast.LENGTH_LONG).show();
+            pressedTime = System.currentTimeMillis();
+        }
+        else{
+            int seconds = (int)(System.currentTimeMillis() - pressedTime);
+
+            if(seconds> 2000){
+                pressedTime = 0;
+            }
+            else{
+                finish();
+            }
+        }
+    }
 }
 
