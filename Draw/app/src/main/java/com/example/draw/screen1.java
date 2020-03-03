@@ -41,51 +41,7 @@ public class screen1 extends AppCompatActivity {
 
         // 리사이클러뷰에 SimpleTextAdapter 객체 지정.
         mAdapter = new RecyclerAdapter(mList) ;
-<<<<<<< HEAD
         mRecyclerView.setAdapter(mAdapter);
-=======
-        mRecyclerView.setAdapter(mAdapter) ;
-
-        // 파일 읽기
-        SharedPreferences sf = getSharedPreferences("sFile",MODE_PRIVATE);
-
-        String context;
-        Drawable image;
-
-        int mNum = Integer.parseInt(sf.getString("mNum","0"));
-        int hNum = Integer.parseInt(sf.getString("hNum","0"));
-        int bNum = Integer.parseInt(sf.getString("bNum","0"));
-        int rNum = Integer.parseInt(sf.getString("rNum","0"));
-
-        // 아이템 추가
-        if(mNum>0){
-        for(int i=1; i==mNum; i++){
-            image = getDrawable(R.drawable.icon1);
-            context = sf.getString("motive"+i, null);
-            addItem(image, context);
-        }}
-
-        if(hNum>0){
-        for(int i=1; i==hNum; i++){
-            image = getDrawable(R.drawable.icon2);
-            context = sf.getString("healing"+i, null);
-            addItem(image, context);
-        }}
-
-        if(bNum>0){
-        for(int i=1; i==bNum; i++){
-            image = getDrawable(R.drawable.icon3);
-            context = sf.getString("boring"+i, null);
-            addItem(image, context);
-        }}
-
-        if(rNum>0){
-        for(int i=1; i==rNum; i++){
-            image = getDrawable(R.drawable.icon4);
-            context = sf.getString("refresh"+i, null);
-            addItem(image, context);
-        }}
->>>>>>> 92543f8fe2d55e6f87b2489b86169188456dc480
 
         mAdapter.notifyDataSetChanged();
 
