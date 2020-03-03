@@ -18,12 +18,13 @@ import static android.content.Context.MODE_PRIVATE;
 
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
-    private ArrayList<RecyclerItem> mData;
-
+    private ArrayList<RecyclerItem> mData = null;
     // 생성자에서 데이터 리스트 객체를 전달받음.
     RecyclerAdapter(ArrayList<RecyclerItem> list) {
         mData = list;
     }
+
+
 
     // onCreateViewHolder() - 아이템 뷰를 위한 뷰홀더 객체 생성하여 리턴.
     @NonNull
@@ -47,39 +48,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         holder.icon.setImageDrawable(item.getIcon());
         holder.text.setText(item.getText());
         holder.button.setTag(holder.getAdapterPosition());
-        holder.button.setOnClickListener(v -> {
-            int pos = (int) v.getTag();
-            mData.remove(pos);
 
-            SharedPreferences sf = v.getContext().getSharedPreferences("sFile",MODE_PRIVATE);
-
-            int mNum = Integer.parseInt(sf.getString("mNum","0"));
-            int hNum = Integer.parseInt(sf.getString("hNum","0"));
-            int bNum = Integer.parseInt(sf.getString("bNum","0"));
-            int rNum = Integer.parseInt(sf.getString("rNum","0"));
-
-            SharedPreferences.Editor editor = sf.edit();
-
-
-            if(pos<=mNum){
-                editor.remove("motivate"+pos);
-            }
-            else if(pos-mNum<= hNum) {
-                int num = pos-mNum;
-                editor.remove("healing"+num);
-            }
-            else if(pos-mNum-hNum<= bNum) {
-                int num = pos-mNum-hNum;
-                editor.remove("boring"+num);
-            }
-            else if(pos-mNum-hNum-bNum<= rNum) {
-                int num = pos-mNum-hNum-bNum;
-                editor.remove("refresh"+num);
-            }
-            editor.apply();
-
-            notifyDataSetChanged();
-        });
     }
 
     // getItemCount() - 전체 데이터 갯수 리턴.
@@ -88,6 +57,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         return mData.size();
     }
 
+
+    // view holder 생성
     public class ViewHolder extends RecyclerView.ViewHolder {
         ImageView icon;
         TextView text;
@@ -97,10 +68,45 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
             super(itemView);
 
             // 뷰 객체에 대한 참조. (hold strong reference)
-            icon = itemView.findViewById(R.id.icon);
-            text = itemView.findViewById(R.id.text);
-            button = itemView.findViewById(R.id.button);
+            icon = itemView.findViewById(R.id.item_icon);
+            text = itemView.findViewById(R.id.item_text);
+            button = itemView.findViewById(R.id.itemBtn_delete);
+
+            // 삭제 버튼 이벤트처리
+            button.setOnClickListener(new View.OnClickListener(){
+                public void onClick(View v){
+                    int pos = getAdapterPosition();
+                    if(pos != RecyclerView.NO_POSITION){
+                        // 데이터 리스트로부터 아이템 데이터 참조
+                        RecyclerItem item = mData.get(pos);
+                        SharedPreferences sf = v.getContext().getSharedPreferences("sFile",MODE_PRIVATE);
+
+                        SharedPreferences.Editor editor = sf.edit();
+                        if( sf.contains( item.getKey() ) ){ editor.remove( item.getKey() ); }
+                        editor.apply();
+                        notifyDataSetChanged();
+                        mData.remove(pos);
+                        StringBuffer listKeys = new StringBuffer();
+
+                        for(RecyclerItem value: mData){
+                            listKeys.append(value.getKey()+" ");
+                        }
+
+                        if(! mData.isEmpty()){
+                            sf.edit().putString("data_list",listKeys.toString()).commit();
+                        }
+                        else{
+                            sf.edit().putString("data_list",null).commit();
+                        }
+                    }
+                }
+            });
+
         }
 
     }
+
+
+
+
 }

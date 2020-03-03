@@ -1,12 +1,12 @@
 package com.example.draw;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     {
 
         //입력한 str 가져오기 -- screen 2에서 저장할 예정!
-        EditText text = (EditText) findViewById(R.id.editText2);
+        EditText text = (EditText) findViewById(R.id.save_editText2);
         String str = text.getText().toString();
 
         //입력 내용이 없으면 toast로 띄우기. 아니면 인텐트 실행

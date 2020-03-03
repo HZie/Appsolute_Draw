@@ -15,7 +15,7 @@
         tools:layout_editor_absoluteY="327dp">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/scrn01_textView"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="해당 문구에 해당하는 상황을 고르세요"
@@ -36,7 +36,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/imageButton3"
+                android:id="@+id/scrn02Btn_motivation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -45,7 +45,7 @@
                 android:onClick="bt1"/>
 
             <ImageButton
-                android:id="@+id/imageButton4"
+                android:id="@+id/scrn02Btn_healing"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -66,7 +66,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/imageButton10"
+                android:id="@+id/scrn02Btn_boring"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -75,7 +75,7 @@
                 android:onClick="bt3"/>
 
             <ImageButton
-                android:id="@+id/imageButton11"
+                android:id="@+id/scrn02Btn_refresh"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

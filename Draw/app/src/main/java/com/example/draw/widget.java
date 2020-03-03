@@ -157,7 +157,7 @@ public class widget extends AppWidgetProvider {
 
     }
 
-    // 데이터 읽기 (작업중)
+    // 데이터 읽기
     public String readData(Context context,String tag){
         String content = "No Data";
         //저장된 값을 불러오기 위해 같은 네임파일을 찾음.

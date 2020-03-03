@@ -14,7 +14,7 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/add"
+            android:id="@+id/scrn01Btn_add"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -24,7 +24,7 @@
             android:textSize="18sp" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
+            android:id="@+id/scrn01_recyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 

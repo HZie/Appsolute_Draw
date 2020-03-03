@@ -7,7 +7,7 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:id="@+id/linearLayout"
+        android:id="@+id/item_linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -16,13 +16,13 @@
         android:padding="8dp">
 
         <ImageView
-            android:id="@+id/icon"
+            android:id="@+id/item_icon"
             android:layout_width="60dp"
             android:layout_height="60dp"
             tools:srcCompat="@tools:sample/avatars" />
 
         <TextView
-            android:id="@+id/text"
+            android:id="@+id/item_text"
             android:layout_width="287dp"
             android:layout_height="56dp"
             android:layout_weight="1"
@@ -33,7 +33,7 @@
             android:textSize="18sp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/itemBtn_delete"
             android:layout_width="wrap_content"
             android:layout_height="38dp"
             android:layout_weight="1"
