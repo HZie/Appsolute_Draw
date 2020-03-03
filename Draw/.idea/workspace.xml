@@ -13,9 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10bda17c-d647-4253-b36b-046d95d767e9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/debug.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-af.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi-v2/values-af.json" afterDir="false" />
@@ -639,6 +638,9 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/values_values.arsc.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/xml_widget_info.xml.flat" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/xml_widget_info.xml.flat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/signing_config/debug/out/signing-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/signing_config/debug/out/signing-config.json" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+>>>>>>> 92543f8fe2d55e6f87b2489b86169188456dc480
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/appcompat/R$anim.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/appcompat/R$anim.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/appcompat/R$attr.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/appcompat/R$attr.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/appcompat/R$bool.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/androidx/appcompat/R$bool.dex" afterDir="false" />
@@ -829,11 +831,14 @@
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/draw/R.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/draw/R.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/draw/screen2.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/draw/screen2.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/draw/widget.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0/com/example/draw/widget.dex" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/draw/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/draw/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/draw/RecyclerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/draw/RecyclerAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/draw/RecyclerItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/draw/RecyclerItem.java" afterDir="false" />
+=======
+>>>>>>> 92543f8fe2d55e6f87b2489b86169188456dc480
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/draw/screen1.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/draw/screen1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/draw/screen2.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/draw/screen2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/draw/widget.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/draw/widget.java" afterDir="false" />
@@ -855,7 +860,11 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_28" />
+=======
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3_API_29" />
+>>>>>>> 92543f8fe2d55e6f87b2489b86169188456dc480
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
@@ -868,6 +877,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/draw/RecyclerAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="415">
               <caret line="91" column="29" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="29" />
               <folding>
@@ -897,16 +907,50 @@
               <caret line="135" column="19" lean-forward="true" selection-start-line="135" selection-start-column="19" selection-end-line="135" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
+=======
+            <state relative-caret-position="304">
+              <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2940#2941#0" expanded="true" />
+                <element signature="e#2975#2976#0" expanded="true" />
+>>>>>>> 92543f8fe2d55e6f87b2489b86169188456dc480
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/draw/RecyclerItem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/draw/screen1.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="473">
               <caret line="46" selection-start-line="46" selection-end-line="46" />
+=======
+            <state relative-caret-position="227">
+              <caret line="71" column="36" lean-forward="true" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/draw/screen2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="158" column="13" lean-forward="true" selection-start-line="158" selection-start-column="13" selection-end-line="158" selection-end-column="13" />
+>>>>>>> 92543f8fe2d55e6f87b2489b86169188456dc480
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1018,6 +1062,7 @@
         <option value="$PROJECT_DIR$/app/src/main/res/xml/widget_info.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/widget.xml" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_screen2.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_screen1.xml" />
@@ -1035,6 +1080,17 @@
     <option name="x" value="746" />
     <option name="width" value="1181" />
     <option name="height" value="1087" />
+=======
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/draw/RecyclerAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/draw/screen1.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="949" />
+    <option name="width" value="980" />
+    <option name="height" value="1031" />
+>>>>>>> 92543f8fe2d55e6f87b2489b86169188456dc480
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -1069,6 +1125,7 @@
             <path>
               <item name="Draw" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+<<<<<<< HEAD
               <item name="java (generated)" type="edd41e36:AndroidSourceTypeNode" />
             </path>
             <path>
@@ -1080,6 +1137,8 @@
             <path>
               <item name="Draw" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+=======
+>>>>>>> 92543f8fe2d55e6f87b2489b86169188456dc480
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
@@ -1090,12 +1149,15 @@
             </path>
             <path>
               <item name="Draw" type="1abcf292:AndroidViewProjectNode" />
+<<<<<<< HEAD
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
               <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
             <path>
               <item name="Draw" type="1abcf292:AndroidViewProjectNode" />
+=======
+>>>>>>> 92543f8fe2d55e6f87b2489b86169188456dc480
               <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
@@ -1107,8 +1169,13 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_2_API_28" />
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-03-01T11:34:44.944Z" />
+=======
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3_API_29" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-03-01T12:12:39.356Z" />
+>>>>>>> 92543f8fe2d55e6f87b2489b86169188456dc480
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
@@ -1222,7 +1289,21 @@
       <option name="project" value="LOCAL" />
       <updated>1581696590248</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="..">
+      <created>1583059670858</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583059670858</updated>
+    </task>
+    <task id="LOCAL-00003" summary="..">
+      <created>1583060873991</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583060873991</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1238,7 +1319,11 @@
     <frame x="746" y="0" width="1181" height="1087" extended-state="0" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2016057" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.13441296" />
+>>>>>>> 92543f8fe2d55e6f87b2489b86169188456dc480
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -1250,12 +1335,17 @@
       <window_info active="true" anchor="bottom" id="Logcat" order="1" sideWeight="0.617306" visible="true" weight="0.3221406" />
       <window_info anchor="bottom" id="TODO" order="2" sideWeight="0.4989339" weight="0.32848233" />
       <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.4989339" weight="0.3289183" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.38269404" side_tool="true" visible="true" weight="0.3221406" />
       <window_info anchor="bottom" id="Build" order="5" sideWeight="0.4915254" weight="0.2161595" />
+=======
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5044444" side_tool="true" weight="0.455516" />
+      <window_info anchor="bottom" id="Build" order="5" sideWeight="0.49333334" weight="0.053380784" />
+>>>>>>> 92543f8fe2d55e6f87b2489b86169188456dc480
       <window_info anchor="bottom" id="Android Profiler" order="6" sideWeight="0.49946696" weight="0.32848233" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49626866" weight="0.455516" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.49555555" weight="0.455516" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.3291815" />
-      <window_info active="true" anchor="bottom" id="Messages" order="9" sideWeight="0.49878544" visible="true" weight="0.3291815" />
+      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.4977778" weight="0.3291815" />
       <window_info anchor="bottom" id="Find" order="10" sideWeight="0.4989339" weight="0.32848233" />
       <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
@@ -1412,6 +1502,7 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_screen1.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
@@ -1432,16 +1523,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="135" column="19" lean-forward="true" selection-start-line="135" selection-start-column="19" selection-end-line="135" selection-end-column="43" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/draw/widget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="169" column="83" selection-start-line="169" selection-start-column="41" selection-end-line="169" selection-end-column="83" />
+>>>>>>> 92543f8fe2d55e6f87b2489b86169188456dc480
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/draw/RecyclerItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="31">
           <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/draw/screen2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="158" column="13" lean-forward="true" selection-start-line="158" selection-start-column="13" selection-end-line="158" selection-end-column="13" />
+>>>>>>> 92543f8fe2d55e6f87b2489b86169188456dc480
           <folding>
             <element signature="e#508#509#0" expanded="true" />
             <element signature="e#537#538#0" expanded="true" />
@@ -1449,13 +1553,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/draw/screen1.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/draw/RecyclerItem.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="473">
           <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="228">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+>>>>>>> 92543f8fe2d55e6f87b2489b86169188456dc480
         </state>
       </provider>
     </entry>
@@ -1468,6 +1577,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/draw/RecyclerAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="415">
           <caret line="91" column="29" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="29" />
           <folding>
@@ -1480,6 +1590,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="188" lean-forward="true" selection-start-line="188" selection-end-line="188" />
+          <folding>
+            <element signature="imports" expanded="true" />
+=======
+        <state relative-caret-position="304">
+          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2940#2941#0" expanded="true" />
+            <element signature="e#2975#2976#0" expanded="true" />
+>>>>>>> 92543f8fe2d55e6f87b2489b86169188456dc480
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/draw/screen1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="71" column="36" lean-forward="true" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
