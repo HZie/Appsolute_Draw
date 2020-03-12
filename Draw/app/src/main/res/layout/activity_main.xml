@@ -43,9 +43,9 @@
 
     <Button
         android:id="@+id/save_button"
-        android:layout_width="116dp"
-        android:layout_height="61dp"
-        android:background="@color/grapefruit"
+        android:layout_width="91dp"
+        android:layout_height="36dp"
+        android:background="@drawable/custom_button"
 
 
         android:onClick="onClick"
