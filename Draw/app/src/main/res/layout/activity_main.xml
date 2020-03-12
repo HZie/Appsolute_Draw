@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/colorBackground">
+    android:background="#ffff">
 
     <!-- 클릭시 screen2 로 이동 -->
 
@@ -16,7 +16,7 @@
         android:layout_height="502dp"
         android:height = "502dp"
         android:width = "321dp"
-        android:background="@drawable/custom_textview"
+        android:background="@drawable/gradient_screen2"
         android:ems="10"
         android:gravity="left"
 
@@ -45,7 +45,7 @@
         android:id="@+id/save_button"
         android:layout_width="116dp"
         android:layout_height="61dp"
-        android:background="@drawable/custom_button"
+        android:background="@color/grapefruit"
 
 
         android:onClick="onClick"
