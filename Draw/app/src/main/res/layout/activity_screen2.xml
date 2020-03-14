@@ -13,7 +13,7 @@
         android:background="@drawable/screen2_button_box"
         android:orientation="vertical"
         android:paddingLeft="10dp"
-        android:paddingTop="20dp"
+        android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,6 +44,11 @@
                 android:onClick="bt2"
                 app:srcCompat="@drawable/icon1" />
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="vertical"></LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
