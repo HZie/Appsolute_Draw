@@ -44,6 +44,8 @@ public class screen1 extends AppCompatActivity {
         mAdapter = new RecyclerAdapter(mList) ;
         mRecyclerView.setAdapter(mAdapter);
 
+
+
         mAdapter.notifyDataSetChanged();
 
     }
@@ -93,6 +95,7 @@ public class screen1 extends AppCompatActivity {
 
     private long pressedTime;
 
+    // 뒤로가기 버튼 처리
     @Override
     public void onBackPressed() {
 

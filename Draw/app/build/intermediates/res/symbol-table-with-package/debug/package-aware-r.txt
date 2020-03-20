@@ -382,6 +382,7 @@ color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
+color blue
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -408,6 +409,7 @@ color ewhaSilver
 color ewhaYellowGreen
 color foreground_material_dark
 color foreground_material_light
+color grapefruit
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color material_blue_grey_800
@@ -654,6 +656,8 @@ drawable abc_vector_test
 drawable custom_button
 drawable custom_textview
 drawable example_appwidget_preview
+drawable gradient
+drawable gradient_screen2
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable icon1
@@ -672,6 +676,8 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable screen2_button_box
+drawable splash
 drawable textlayout1
 drawable textlayout2
 drawable tooltip_frame_dark
@@ -784,7 +790,6 @@ id save_editText2
 id screen
 id scrn01Btn_add
 id scrn01_recyclerView
-id scrn01_textView
 id scrn02Btn_boring
 id scrn02Btn_healing
 id scrn02Btn_motivation
@@ -826,6 +831,7 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textView
 id time
 id title
 id titleDividerNoCustom
@@ -1128,6 +1134,7 @@ style RtlOverlay_Widget_AppCompat_Search_DropDown_Text
 style RtlOverlay_Widget_AppCompat_SearchView_MagIcon
 style RtlUnderlay_Widget_AppCompat_ActionButton
 style RtlUnderlay_Widget_AppCompat_ActionButton_Overflow
+style SplashTheme
 style TextAppearance_AppCompat
 style TextAppearance_AppCompat_Body1
 style TextAppearance_AppCompat_Body2

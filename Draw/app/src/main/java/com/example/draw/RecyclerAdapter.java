@@ -1,6 +1,7 @@
 package com.example.draw;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -71,6 +72,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
             icon = itemView.findViewById(R.id.item_icon);
             text = itemView.findViewById(R.id.item_text);
             button = itemView.findViewById(R.id.itemBtn_delete);
+
+
 
             // 삭제 버튼 이벤트처리
             button.setOnClickListener(new View.OnClickListener(){

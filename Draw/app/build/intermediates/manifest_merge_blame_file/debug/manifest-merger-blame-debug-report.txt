@@ -6,75 +6,86 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="26"
-8-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml
+8-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="29" />
-9-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml
+9-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:5:5-40:19
+11-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:5:5-51:19
 12        android:allowBackup="true"
-12-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:6:9-35
+12-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.0.1] C:\Users\yorco\.gradle\caches\transforms-2\files-2.1\46da25c3e2ae6308b2227b660caa604d\core-1.0.1\AndroidManifest.xml:22:18-86
+13-->[androidx.core:core:1.0.1] C:\Users\JH\.gradle\caches\transforms-2\files-2.1\46da25c3e2ae6308b2227b660caa604d\core-1.0.1\AndroidManifest.xml:22:18-86
 14        android:debuggable="true"
 15        android:icon="@mipmap/ic_launcher"
-15-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:7:9-43
+15-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:7:9-43
 16        android:label="@string/app_name"
-16-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:8:9-41
+16-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:8:9-41
 17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:9:9-54
+17-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:9:9-54
 18        android:supportsRtl="true"
-18-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:10:9-35
-19        android:theme="@style/AppTheme" >
-19-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:11:9-40
-20
-21        <!-- 위젯 선언 -->
-22        <receiver
-22-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:14:9-27:20
-23            android:name="com.example.draw.widget"
-23-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:15:13-35
-24            android:label="draw_widget" >
-24-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:16:13-40
-25
-26            <!-- 위젯에서 수신할 action들 정의 -->
-27            <intent-filter>
-27-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:19:13-21:29
-28                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-28-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:20:17-84
-28-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:20:25-81
-29            </intent-filter>
-30
-31            <!-- 이 브로드캐스트 리시버가 위젯임을 명시 & 명세파일 위치 면시 -->
-32            <meta-data
-32-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:24:13-26:55
-33                android:name="android.appwidget.provider"
-33-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:25:17-58
-34                android:resource="@xml/widget_info" />
-34-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:26:17-52
-35        </receiver>
-36
-37        <!-- 위젯 선언 끝 -->
-38
-39        <activity android:name="com.example.draw.screen1" >
-39-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:31:9-37:20
-39-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:31:19-42
-40            <intent-filter>
-40-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:32:13-36:29
-41                <action android:name="android.intent.action.MAIN" />
-41-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:33:17-69
-41-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:33:25-66
-42
-43                <category android:name="android.intent.category.LAUNCHER" />
-43-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:35:17-77
-43-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:35:27-74
-44            </intent-filter>
-45        </activity>
-46        <activity android:name="com.example.draw.MainActivity" />
-46-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:38:9-50
-46-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:38:19-47
-47        <activity android:name="com.example.draw.screen2" />
-47-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:39:9-45
-47-->C:\Users\yorco\AndroidStudioProjects\gitoriject\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:39:19-42
-48    </application>
-49
-50</manifest>
+18-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:10:9-35
+19        android:testOnly="true"
+20        android:theme="@style/AppTheme" >
+20-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:11:9-40
+21
+22        <!-- 위젯 선언 -->
+23        <receiver
+23-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:14:9-27:20
+24            android:name="com.example.draw.widget"
+24-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:15:13-35
+25            android:label="draw_widget" >
+25-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:16:13-40
+26
+27            <!-- 위젯에서 수신할 action들 정의 -->
+28            <intent-filter>
+28-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:19:13-21:29
+29                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+29-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:20:17-84
+29-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:20:25-81
+30            </intent-filter>
+31
+32            <!-- 이 브로드캐스트 리시버가 위젯임을 명시 & 명세파일 위치 면시 -->
+33            <meta-data
+33-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:24:13-26:55
+34                android:name="android.appwidget.provider"
+34-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:25:17-58
+35                android:resource="@xml/widget_info" />
+35-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:26:17-52
+36        </receiver>
+37
+38        <!-- 위젯 선언 끝 -->
+39
+40        <activity android:name="com.example.draw.screen1" />
+40-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:31:9-44
+40-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:31:19-42
+41        <activity android:name="com.example.draw.MainActivity" />
+41-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:33:9-50
+41-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:33:19-47
+42        <activity android:name="com.example.draw.screen2" />
+42-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:34:9-45
+42-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:34:19-42
+43
+44        <!-- 스플래시 액티비티 . -->
+45        <activity
+45-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:37:9-48:20
+46            android:name="com.example.draw.SplashActivity"
+46-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:38:13-43
+47            android:screenOrientation="portrait"
+47-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:40:13-49
+48            android:theme="@style/SplashTheme" >
+48-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:39:13-47
+49            <intent-filter>
+49-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:42:13-46:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:43:17-69
+50-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:43:25-66
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:45:17-77
+52-->D:\ETC\Creating\workspace\git\Appsolute_Draw\Draw\app\src\main\AndroidManifest.xml:45:27-74
+53            </intent-filter>
+54        </activity>
+55    </application>
+56
+57</manifest>
