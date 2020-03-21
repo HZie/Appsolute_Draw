@@ -24,7 +24,7 @@ public class screen1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Drawable[] icons = {getDrawable(R.drawable.icon1),getDrawable(R.drawable.icon2),getDrawable(R.drawable.icon3),getDrawable(R.drawable.icon4)};
+        Drawable[] icons = {getDrawable(R.drawable.motivate),getDrawable(R.drawable.healing),getDrawable(R.drawable.boring),getDrawable(R.drawable.refresh)};
         mList = getDataList(icons);
 
         setContentView(R.layout.activity_screen1);

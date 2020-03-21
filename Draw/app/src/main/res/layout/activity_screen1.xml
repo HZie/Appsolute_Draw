@@ -5,7 +5,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FDF6E1"
+    android:background="#Ffffff"
     tools:context=".screen1">
 
     <TextView
@@ -33,11 +33,13 @@
             android:id="@+id/scrn01Btn_add"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="#FA00462A"
+            android:layout_margin="37dp"
+            android:background="@drawable/button_background"
+            android:ellipsize="none"
+            android:fontFamily="@font/seoulhangangm"
             android:text="문장 더하기"
-            android:textColor="#FCF9F9"
-            android:textSize="18sp" />
+            android:textColor="#Ffffff"
+            android:textSize="24sp" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/scrn01_recyclerView"
