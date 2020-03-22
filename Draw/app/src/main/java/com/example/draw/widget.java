@@ -27,18 +27,14 @@ public class widget extends AppWidgetProvider {
 
         if(situation == 12){
             intent.setAction("android.action.TAG_BUTTON");
-            Log.d(this.getClass().getName(),"button "+tag_id+" is set");
             intent.putExtra("tag",tag_id);
         }
         else if(situation == 21){
             intent.setAction("android.action.BACK_BUTTON");
-            Log.d(this.getClass().getName(),"back button is set");
 
         }
         else if(situation == 22){
             intent.setAction("android.action.REFRESH_BUTTON");
-            Log.d(this.getClass().getName(),"refresh button is set");
-
         }
 
         return PendingIntent.getBroadcast(context,tag_id,intent,0);
@@ -53,7 +49,6 @@ public class widget extends AppWidgetProvider {
         for (int appWidgetId : appWidgetIds) {
             RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.widget);
 
-            Log.d(this.getClass().getName(),"widget is updated");
             widget_screen = 1;
             setLayout(views,widget_screen);
 
@@ -107,7 +102,6 @@ public class widget extends AppWidgetProvider {
 
         // tag_id: motive = 101, healing = 102, boring =103, refresh = 104
         if(action.equals(TAG_ACTION)) {
-            Log.d(this.getClass().getName(),"tag action is activated");
             tag_id = intent.getIntExtra("tag", 0);
             widget_screen = 2;
             switch (tag_id) {
@@ -133,17 +127,13 @@ public class widget extends AppWidgetProvider {
 
         if(action.equals(BACK_ACTION)){
             widget_screen = 1;
-            Log.d(this.getClass().getName(),"back action is activated");
         }
 
         if(action.equals(REFRESH_ACTION)){
             widget_screen = 2;
-            Log.d(this.getClass().getName(),"refresh action is activated");
-
         }
 
         setLayout(views, widget_screen);
-        Log.d(this.getClass().getName(),"set Layout in onReceive() with widget_screen " + widget_screen);
 
         if(action.equals(TAG_ACTION) || action.equals(REFRESH_ACTION)){
             // 텍스트 불러오기

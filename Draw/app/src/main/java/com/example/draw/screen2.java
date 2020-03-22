@@ -31,7 +31,7 @@ public class screen2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen2);
-        Drawable[] icons = {getDrawable(R.drawable.icon1),getDrawable(R.drawable.icon2),getDrawable(R.drawable.icon3),getDrawable(R.drawable.icon4)};
+        Drawable[] icons = {getDrawable(R.drawable.motivate),getDrawable(R.drawable.healing),getDrawable(R.drawable.boring),getDrawable(R.drawable.refresh)};
         mData = getDataList(icons);
 
         //Intent intent = getIntent();
@@ -82,19 +82,19 @@ public class screen2 extends AppCompatActivity {
             switch(tag){
                 case "motive":
                     num = Integer.parseInt(sf.getString("mNum","0"));
-                    icon = getDrawable(R.drawable.icon1);
+                    icon = getDrawable(R.drawable.motivate);
                     break;
                 case "boring" :
                     num = Integer.parseInt(sf.getString("bNum","0"));
-                    icon = getDrawable(R.drawable.icon2);
+                    icon = getDrawable(R.drawable.boring);
                     break;
                 case "healing":
                     num = Integer.parseInt(sf.getString("hNum","0"));
-                    icon = getDrawable(R.drawable.icon3);
+                    icon = getDrawable(R.drawable.healing);
                     break;
                 case "refresh" :
                     num = Integer.parseInt(sf.getString("rNum","0"));
-                    icon = getDrawable(R.drawable.icon4);
+                    icon = getDrawable(R.drawable.refresh);
                     break;
             }
         }catch(Exception e){num=0;}

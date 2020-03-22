@@ -8,8 +8,8 @@
     tools:context=".screen2">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="342dp"
+        android:layout_height="470dp"
         android:background="@drawable/screen2_button_box"
         android:orientation="vertical"
         android:paddingLeft="10dp"
@@ -24,6 +24,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <ImageButton
@@ -33,7 +34,8 @@
                 android:layout_weight="1"
                 android:background="#FFFF"
                 android:onClick="bt1"
-                app:srcCompat="@drawable/icon4" />
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/motivate" />
 
             <ImageButton
                 android:id="@+id/scrn02Btn_healing"
@@ -42,7 +44,8 @@
                 android:layout_weight="1"
                 android:background="#FFFF"
                 android:onClick="bt2"
-                app:srcCompat="@drawable/icon1" />
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/healing" />
         </LinearLayout>
 
         <LinearLayout
@@ -53,6 +56,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <ImageButton
@@ -62,7 +66,8 @@
                 android:layout_weight="1"
                 android:background="#FFFF"
                 android:onClick="bt3"
-                app:srcCompat="@drawable/icon2" />
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/boring" />
 
             <ImageButton
                 android:id="@+id/scrn02Btn_refresh"
@@ -71,7 +76,8 @@
                 android:layout_weight="1"
                 android:background="#FFFF"
                 android:onClick="bt4"
-                app:srcCompat="@drawable/icon3" />
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/refresh" />
         </LinearLayout>
 
         <TextView

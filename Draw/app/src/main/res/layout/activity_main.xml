@@ -14,27 +14,24 @@
         android:id="@+id/save_editText2"
         android:layout_width="321dp"
         android:layout_height="502dp"
-        android:height = "502dp"
-        android:width = "321dp"
+        android:width="321dp"
+        android:height="502dp"
         android:background="@drawable/gradient_screen2"
+        android:breakStrategy="simple"
         android:ems="10"
-        android:gravity="left"
 
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
+        android:gravity="left"
+        android:hint="글을 작성하세요..."
+
+
+        android:inputType="textMultiLine"
+        android:maxWidth="321dp"
+        android:padding="20dp"
 
 
         android:scrollHorizontally="false"
-        android:breakStrategy="simple"
-        android:maxWidth="321dp"
-        android:inputType="textMultiLine"
-
-
-
-
-        android:hint="   글을 작성하세요..."
-        android:textColorHint="@color/ewhaGoldBlur"
         android:textColor="@color/ewhaGold"
+        android:textColorHint="@color/ewhaGoldBlur"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,8 +46,8 @@
 
 
         android:onClick="onClick"
-        android:text="저장"
 
+        android:text="저장"
         android:textColor="#ffffff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

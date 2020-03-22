@@ -653,6 +653,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable app_icon
 drawable blue_button
 drawable boring
 drawable button_background
@@ -717,7 +718,6 @@ id action_mode_close_button
 id action_text
 id actions
 id activity_chooser_view_content
-id activity_main
 id add
 id alertTitle
 id all
@@ -774,7 +774,6 @@ id item_touch_helper_previous_elevation
 id left
 id line1
 id line3
-id linearLayout
 id listMode
 id list_item
 id message
@@ -799,7 +798,9 @@ id right_side
 id save_button
 id save_editText2
 id screen
+id scrn01
 id scrn01Btn_add
+id scrn01_linearLayout
 id scrn01_recyclerView
 id scrn01_showMemo
 id scrn02Btn_boring

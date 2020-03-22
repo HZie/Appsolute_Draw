@@ -21,7 +21,7 @@
         android:top="5dp">
         <shape android:shape="rectangle" >
             <!-- fill the inside in the color you want (could also be a gradient again if you want to, just change solid to gradient and enter angle, start, maybe center, and end color) -->
-            <solid android:color="#F6F5F5" />
+            <solid android:color="#FFFFFF" />
             <corners android:radius="10dp" />
         </shape>
     </item>

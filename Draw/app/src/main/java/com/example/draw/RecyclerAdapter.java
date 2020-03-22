@@ -2,7 +2,6 @@ package com.example.draw;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,11 +20,30 @@ import static android.content.Context.MODE_PRIVATE;
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHolder> {
     private ArrayList<RecyclerItem> mData = null;
     // 생성자에서 데이터 리스트 객체를 전달받음.
+
+    public interface OnItemClickListener{
+        void onItemClick(View v, int pos);
+    }
+
+    private OnItemClickListener mListener = null;
+
+    public void setOnItemClickListener(OnItemClickListener listener){
+        this.mListener = listener;
+    }
+
+    public interface OnDeleteBtnListener{
+        void onDeleteBtnClick(View v, int pos);
+    }
+
+    private OnDeleteBtnListener mDListener = null;
+
+    public void setOnDeleteBtnListener(OnDeleteBtnListener listener){
+        this.mDListener = listener;
+    }
+
     RecyclerAdapter(ArrayList<RecyclerItem> list) {
         mData = list;
     }
-
-
 
     // onCreateViewHolder() - 아이템 뷰를 위한 뷰홀더 객체 생성하여 리턴.
     @NonNull
@@ -73,37 +91,30 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
             text = itemView.findViewById(R.id.item_text);
             button = itemView.findViewById(R.id.itemBtn_delete);
 
-
-
-            // 삭제 버튼 이벤트처리
-            button.setOnClickListener(new View.OnClickListener(){
+            // 아이템 클릭 커스텀 리스너
+            itemView.setOnClickListener(new View.OnClickListener(){
                 public void onClick(View v){
                     int pos = getAdapterPosition();
                     if(pos != RecyclerView.NO_POSITION){
-                        // 데이터 리스트로부터 아이템 데이터 참조
-                        RecyclerItem item = mData.get(pos);
-                        SharedPreferences sf = v.getContext().getSharedPreferences("sFile",MODE_PRIVATE);
-
-                        SharedPreferences.Editor editor = sf.edit();
-                        if( sf.contains( item.getKey() ) ){ editor.remove( item.getKey() ); }
-                        editor.apply();
-                        notifyDataSetChanged();
-                        mData.remove(pos);
-                        StringBuffer listKeys = new StringBuffer();
-
-                        for(RecyclerItem value: mData){
-                            listKeys.append(value.getKey()+" ");
-                        }
-
-                        if(! mData.isEmpty()){
-                            sf.edit().putString("data_list",listKeys.toString()).commit();
-                        }
-                        else{
-                            sf.edit().putString("data_list",null).commit();
+                        if(mListener != null){
+                            mListener.onItemClick(v,pos);
                         }
                     }
                 }
             });
+
+            // 삭제 버튼 이벤트 처리
+            button.setOnClickListener(new View.OnClickListener(){
+                public void onClick(View v){
+                    int pos = getAdapterPosition();
+                    if(pos != RecyclerView.NO_POSITION){
+                        if(mDListener != null){
+                            mDListener.onDeleteBtnClick(v,pos);
+                        }
+                    }
+                }
+            });
+
 
         }
 
